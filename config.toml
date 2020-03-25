@@ -1,0 +1,17 @@
+baseURL = "https://naipia.github.io/"
+languageCode = "ja"
+title = "naipia"
+theme = "hugograyscale"
+#googleAnalytics = ""
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[params]
+    # Provide some metadata for search and indexing services
+    #description = "naipia"
+
+[Author]
+    name = "naipia"
+    email = ""
+
+[Social]
+    twitter = "naipia_"
