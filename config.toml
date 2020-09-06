@@ -36,4 +36,4 @@ theme = "hugo-clarity"
   #logo = ""
   figurePositionShow = false
   figurePositionLabel = "Figure"
-  mobileNavigation = "left"
+  mobileNavigation = "right"
