@@ -1,17 +1,39 @@
 baseURL = "https://naipia.github.io/"
 languageCode = "ja"
 title = "naipia"
-theme = "hugograyscale"
-#googleAnalytics = ""
-disableKinds = ["taxonomy", "taxonomyTerm"]
+author = "naipia"
+paginate = 10
+theme = "hugo-clarity"
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    hl_Lines = "--"
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = false
+    noClasses = false
+    style = "monokai"
+    tabWidth = 2
+  [markup.goldmark.renderer]
+    hardWraps = false
+    unsafe = false
+    xhtml = false
 
 [params]
-    # Provide some metadata for search and indexing services
-    #description = "naipia"
-
-[Author]
-    name = "naipia"
-    email = ""
-
-[Social]
-    twitter = "naipia_"
+  author = "naipia"
+  twitter = "@naipia_"
+  #largeTwitterCard = false
+  introDescription = ""
+  #ga_analytics = "XXXXXXXXXX"
+  numberOfTagsShown = 4
+  fallBackOgImage = "images/thumbnail.jpg" 
+  codeMaxLines = 100
+  codeLineNumbers = true
+  mainSections = ["blog", "procon"]
+  #centerLogo = false
+  #logo = ""
+  figurePositionShow = false
+  figurePositionLabel = "Figure"
+  mobileNavigation = "left"

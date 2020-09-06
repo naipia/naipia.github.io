@@ -1,0 +1,8 @@
+- name: Home
+  link: /
+- name: Blog
+  link: blog/
+- name: 競プロ
+  link: procon/
+- name: About
+  link: about/
