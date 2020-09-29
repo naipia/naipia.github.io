@@ -9,14 +9,11 @@ enableGitInfo = true
 [markup]
   [markup.highlight]
     codeFences = true
-    guessSyntax = true
-    hl_Lines = "--"
+    hl_Lines = ""
     lineNoStart = 1
     lineNos = true
     lineNumbersInTable = false
     noClasses = false
-    style = "monokai"
-    tabWidth = 2
   [markup.goldmark.renderer]
     hardWraps = false
     unsafe = false
@@ -38,3 +35,4 @@ enableGitInfo = true
   figurePositionShow = false
   figurePositionLabel = "Figure"
   mobileNavigation = "right"
+  customCSS = ["css/custom.css", "css/syntax.css"]
