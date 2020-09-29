@@ -1,6 +1,7 @@
 ---
 title: "Procon"
-toc: false
 categories:
   - 競技プログラミング
 ---
+
+[Procon Go Library](./golib/)
