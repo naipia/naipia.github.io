@@ -4,6 +4,7 @@ title = "naipia"
 author = "naipia"
 paginate = 10
 theme = "hugo-clarity"
+enableGitInfo = true
 
 [markup]
   [markup.highlight]

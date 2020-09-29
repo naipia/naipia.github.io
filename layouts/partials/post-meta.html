@@ -3,7 +3,7 @@
     <use xlink:href="#calendar"></use>
   </svg>
   <span class="post_date">
-    {{ .Date.Format "2006-01-02" }}
+    {{ .Lastmod.Format "2006-01-02" }}
   </span>
   {{- with .Params.tags -}}
   {{- range . }}
