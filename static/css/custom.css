@@ -1,3 +1,4 @@
 code:not([class^="lang"]) {
   font-family: Menlo;
+  color: #FFF;
 }
