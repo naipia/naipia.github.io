@@ -16,8 +16,8 @@ Go言語の競技プログラミングライブラリ（コピペ用）
 
 - [Union-Find](./union-find/)
 - [Binary Indexed Tree](./binary-indexed-tree/)
-- [Segment Tree]
-- [Lazy Segment Tree]
+- [Segment Tree](./segment-tree/)
+- [Lazy Segment Tree](./lazy-segment-tree/)
 
 ### グラフ
 
