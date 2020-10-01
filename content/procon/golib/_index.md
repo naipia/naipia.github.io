@@ -31,9 +31,9 @@ Go言語の競技プログラミングライブラリ（コピペ用）
 
 ### 文字列
 
-- [Suffix Array]
-- [LCP Array]
-- [Z algorithm]
+- [Suffix Array](./suffix-array)
+- [LCP Array](./longest-common-prefix-array/)
+- [Z algorithm](./z-algorithm/)
 
 ### 数学
 
