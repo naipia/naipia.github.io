@@ -14,14 +14,14 @@ tags:
 
 ### 記録
 
-[AtCoder](https://atcoder.jp/)でのレーティング推移
+- [AtCoder](https://atcoder.jp/)でのレーティング推移
 ![AtCoder](/img/2020/rating-records/2020-03-23-225804.png)
 
-[AtCoder Scores](https://atcoder-scores.herokuapp.com/)の精進グラフ
+- [AtCoder Scores](https://atcoder-scores.herokuapp.com/)の精進グラフ
 ![AtCoder Scores](/img/2020/rating-records/2020-03-23-225503.png)
 
-[AtCoder Performances](https://atcoderapps.herokuapp.com/atcoderperformances/)のパフォーマンス推移
+- [AtCoder Performances](https://atcoderapps.herokuapp.com/atcoderperformances/)のパフォーマンス推移
 ![AtCoder Performances](/img/2020/rating-records/2020-03-23-225347.png)
 
-[AtCoder Problems](https://kenkoooo.com/atcoder/#/table/)
+- [AtCoder Problems](https://kenkoooo.com/atcoder/#/table/)
 ![AtCoder Problems](/img/2020/rating-records/2020-03-23-014313.png)

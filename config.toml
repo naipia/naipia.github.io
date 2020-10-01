@@ -33,6 +33,6 @@ enableGitInfo = true
   #centerLogo = false
   #logo = ""
   figurePositionShow = false
-  figurePositionLabel = "Figure"
+  #figurePositionLabel = "Figure"
   mobileNavigation = "right"
   customCSS = ["css/custom.css", "css/syntax.css"]
