@@ -4,6 +4,7 @@ math: true
 categories:
   - 競技プログラミング
 tags:
+  - Go言語
   - library
   - data structure
 ---
