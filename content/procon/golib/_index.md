@@ -1,8 +1,6 @@
 ---
 title: "Procon Go Library"
 math: false
-categories:
-  - 競技プログラミング
 ---
 
 Go言語の競技プログラミングライブラリ（コピペ用）
@@ -21,15 +19,15 @@ Go言語の競技プログラミングライブラリ（コピペ用）
 
 ### グラフ
 
-- [Bellman-Ford]
-- [Dijkstra]
-- [最小全域木]
-- [最大流]
-- [最小費用流]
-- [二部グラフ最大マッチング]
-- [強連結成分分解]
-- [2-SAT]
-- [Lowest Common Ancestor]
+- [Bellman-Ford](./bellman-ford/)
+- [Dijkstra](./dijkstra/)
+- [最小全域木](./kruskal/)
+- [最大流](./max-flow/)
+- [最小費用流](./min-cost-flow/)
+- [二部グラフ最大マッチング](./bipartite-matching/)
+- [強連結成分分解](./strongly-connected-components/)
+- [2-SAT](./two-sat/)
+- [最小共通祖先](./lowest-common-ancestor/)
 
 ### 文字列
 
