@@ -37,11 +37,11 @@ Go言語の競技プログラミングライブラリ（コピペ用）
 
 ### 数学
 
-- [mod]
-- [組合せ]
-- [ユークリッドの互除法]
-- [素因数分解]
-- [素数テーブル]
-- [CRT]
-- [Convolution]
-- [Floor Sum]
+- [Mod](./mod/)
+- [組合せ](./combination/)
+- [ユークリッドの互除法](./euclidean-algorithm/)
+- [素因数分解](./prime-factorization/)
+- [素数テーブル](./prime-table/)
+- [中国余剰定理](./chinese-remainder-theorem/)
+- [Convolution](./convolution/)
+- [Floor Sum](./floor-sum/)
