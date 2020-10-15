@@ -10,7 +10,7 @@ tags:
 ---
 
 ```go
-func zalgorithm(s []string) []int {
+func zalgorithm(s string) []int {
 	n := len(s)
 	z := make([]int, n)
 	z[0] = n
