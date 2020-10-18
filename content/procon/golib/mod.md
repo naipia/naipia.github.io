@@ -29,6 +29,9 @@ func invMod(a, M int) int {
 		a, p = p, a-t*p
 		x, u = u, x-t*u
 	}
+	if x < 0 {
+		x += M
+	}
 	return x
 }
 
