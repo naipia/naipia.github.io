@@ -1,4 +1,80 @@
 code:not([class^="lang"]) {
   font-family: Menlo;
-  color: #FFF;
 }
+
+body {
+  background-color: #bfe4ff;
+  color: #000000;
+}
+
+header {
+  background-color: #84919e !important;
+}
+
+footer {
+  background-color: #bfe4ff !important;
+}
+
+.twitter svg {
+  fill: #00abdc !important;
+}
+
+.icon-share {
+  fill: #000000 !important;
+}
+
+.sidebar ul {
+  list-style: none !important;
+  font-weight: bold;
+}
+
+.sidebar li {
+  margin-left: 15px;
+}
+
+.post_content a {
+  color: #005aff;
+}
+
+a:hover{
+  color: #005aff;
+  text-decoration: underline;
+}
+
+.button_translucent {
+  background-color: #005aff;
+  color: #ffffff !important;
+}
+
+.sticky_note {
+  position: relative;
+  background: #4dc4ff;
+  padding: 0.2em 0.5em;
+  color: #005aff;
+}
+
+.sticky_note:after{
+  position: absolute;
+  content: '';
+  right: 0px;
+  top: 0px;
+  border-width: 0 30px 25px 0;
+  border-style: solid;
+  border-color: #4dc4ff #bfe4ff #4dc4ff;
+  box-shadow: -1px 2px 2px rgba(0, 0, 0, 0.15);
+}
+
+
+.post_item h3 {
+  color: #005aff;
+}
+
+.post_item {
+  border-radius: 0rem;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: bold;
+  color: #000000;
+}
+
