@@ -3,7 +3,7 @@ code:not([class^="lang"]) {
 }
 
 body {
-  background-color: #bfe4ff;
+  background-color: #ffffff;
   color: #000000;
 }
 
@@ -12,7 +12,7 @@ header {
 }
 
 footer {
-  background-color: #bfe4ff !important;
+  background-color: #ffffff !important;
 }
 
 .twitter svg {
@@ -21,6 +21,10 @@ footer {
 
 .icon-share {
   fill: #000000 !important;
+}
+
+.panel_box {
+  background-color: #000000 !important;
 }
 
 .sidebar ul {
@@ -48,9 +52,8 @@ a:hover{
 
 .sticky_note {
   position: relative;
-  background: #4dc4ff;
+  background: #bfe4ff;
   padding: 0.2em 0.5em;
-  color: #005aff;
 }
 
 .sticky_note:after{
@@ -60,13 +63,17 @@ a:hover{
   top: 0px;
   border-width: 0 30px 25px 0;
   border-style: solid;
-  border-color: #4dc4ff #bfe4ff #4dc4ff;
+  border-color: #bfe4ff #ffffff #bfe4ff;
   box-shadow: -1px 2px 2px rgba(0, 0, 0, 0.15);
+}
+
+.sticky_note:hover:after {
+  border-width: 0 35px 35px 0;
 }
 
 
 .post_item h3 {
-  color: #005aff;
+  color: #000000;
 }
 
 .post_item {
