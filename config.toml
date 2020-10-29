@@ -22,16 +22,12 @@ enableGitInfo = true
 [params]
   author = "naipia"
   twitter = "@naipia_"
-  #largeTwitterCard = false
   ga_analytics = "UA-179308520-1"
   numberOfTagsShown = 4
   fallBackOgImage = "img/thumbnail.jpg" 
   codeMaxLines = 100
   codeLineNumbers = true
   mainSections = ["blog", "procon"]
-  #centerLogo = false
-  #logo = ""
   figurePositionShow = false
-  #figurePositionLabel = "Figure"
   mobileNavigation = "right"
   customCSS = ["css/custom.css", "css/syntax.css"]
