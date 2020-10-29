@@ -2,3 +2,19 @@ code:not([class^="lang"]) {
   font-family: Menlo;
   color: #FFF;
 }
+
+body {
+  background-color: rgb(49, 49, 49) !important;
+}
+
+header {
+  background-color: rgb(49, 49, 49) !important;
+}
+
+footer {
+  background-color: rgb(49, 49, 49) !important;
+}
+
+.twitter svg {
+  fill: #00abdc !important;
+}
