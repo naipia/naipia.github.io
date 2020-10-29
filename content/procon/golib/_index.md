@@ -3,7 +3,7 @@ title: "Procon Go Library"
 math: false
 ---
 
-Go言語の競技プログラミングライブラリ（コピペ用）
+Go言語の競技プログラミングライブラリ
 
 ### 探索
 
