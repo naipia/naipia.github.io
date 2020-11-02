@@ -46,6 +46,10 @@ func (uf unionFind) Unite(x, y int) bool {
 	return false
 }
 
+func (uf unionFind) Same(x, y int) bool {
+	return uf.Find(x) == uf.Find(y)
+}
+
 func (uf unionFind) Size(x int) int {
 	return -uf[uf.Find(x)]
 }
