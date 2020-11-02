@@ -1,4 +1,4 @@
-{{ $pages := .Pages }}
+{{ $pages := .CurrentSection.RegularPagesRecursive.ByLastmod.Reverse }}
 {{ if .IsHome }}
   {{ $pages = where .Site.RegularPages.ByLastmod.Reverse "Type" "in" site.Params.mainSections }}
 {{ end }}

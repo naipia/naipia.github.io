@@ -32,6 +32,3 @@ enableGitInfo = true
   mobileNavigation = "right"
   customCSS = ["css/custom.css", "css/syntax.css"]
 
-
-[permalinks]
-blog = "/:section/:year/:month/:filename/"
