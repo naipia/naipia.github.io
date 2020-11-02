@@ -1,5 +1,6 @@
 ---
 title: "AtCoder水色到達時点の記録"
+date: "2020-03-23"
 math: false
 categories:
   - blog
