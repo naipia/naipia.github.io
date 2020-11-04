@@ -1,9 +1,8 @@
 ---
 title: ""
-date: "{{ .Date }}"
 math: false
 categories:
-  - blog
+  - 競技プログラミング
 tags:
   - tag
 ---
