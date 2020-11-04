@@ -1,12 +1,12 @@
-<div class = 'post_meta'>
+<div class="post_meta">
   <span class="post_date">
     Updated on {{ .Lastmod.Format "2006-01-02" }}
   </span>
   {{- with .Params.tags -}}
   {{- range . }}
   {{- $tag := . | urlize }}
-  <a href = '{{ absURL (printf "tags/%s" $tag) }}' class = 'post_tag button button_translucent'>
-    {{- . }}
+  <a href='{{ absURL (printf "tags/%s" $tag) }}' class="post_tag button button_translucent">
+    {{- . -}}
   </a>
   {{- end }}
   {{- end }}

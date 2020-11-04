@@ -23,7 +23,6 @@ enableGitInfo = true
   author = "naipia"
   twitter = "@naipia_"
   ga_analytics = "UA-179308520-1"
-  numberOfTagsShown = 4
   fallBackOgImage = "img/thumbnail.jpg" 
   codeMaxLines = 100
   codeLineNumbers = true

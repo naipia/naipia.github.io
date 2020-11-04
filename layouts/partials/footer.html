@@ -1,6 +1,6 @@
-<footer class = 'footer'>
-<span class = 'year' hidden></span>
-{{ if .Params.math }}
-{{ partial "math.html" . }}
-{{ end }}
+<footer class="footer">
+<span class="year" hidden></span>
+  {{- if .Params.math }}
+    {{ partial "math.html" . }}
+  {{- end }}
 </footer>

@@ -1,21 +1,14 @@
 {{- define "main" }}
-{{- $scratch := newScratch }}
-{{- if isset .Params "image" }}
-  {{- $scratch.Set "image" .Params.image }}
+{{- if .Params.Index }}
+  {{ partial "archive" . }}
 {{- else }}
-  {{ $scratch.Set "image" .Site.Params.fallBackOgImage }}
-{{- end }}
-{{- $image := $scratch.Get "image" }}
-{{- $bg := (path.Join "images" $image | absLangURL) }}
-<div class = 'grid-inverse wrap content'>
-  <article class='post_content'>
-    <h1 class='post_title'>{{ .Title }}</h1>
+<div class="grid-inverse wrap content">
+  <article class="post_content">
+    <h1 class="post_title">{{ .Title }}</h1>
     {{ partial "share" . }}
-    {{ with .Params.featureImage }}
-    <img src = '{{ . }}' class="image_featured">
-    {{ end }}
     {{- .Content }}
   </article>
   {{- partial "sidebar" . }}
 </div>
+{{- end }}
 {{- end }}

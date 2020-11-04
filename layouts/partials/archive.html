@@ -1,9 +1,9 @@
-{{ $pages := .CurrentSection.RegularPagesRecursive.ByLastmod.Reverse }}
-{{ if .IsHome }}
-  {{ $pages = where .Site.RegularPages.ByLastmod.Reverse "Type" "in" site.Params.mainSections }}
-{{ end }}
-<div class='grid-inverse wrap content'>
-  <ul class='posts' id = 'posts'>
+{{- $pages := .Pages.ByTitle }}
+{{- if .IsHome }}
+  {{- $pages = where .Site.RegularPages.ByLastmod.Reverse "Type" "in" site.Params.mainSections }}
+{{- end }}
+<div class="grid-inverse wrap content">
+  <ul class="posts" id="posts">
     {{- range (.Paginate $pages).Pages }}
       {{ partial "excerpt" . }}
     {{- end }}

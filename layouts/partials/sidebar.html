@@ -5,47 +5,20 @@
 
     <h3 class="mt-4">Recent Posts</h3>
     <ul class="flex-column sticky_note">
-      {{ range first 4 (where .Site.RegularPages.ByLastmod.Reverse "Type" "in" site.Params.mainSections) }}
-      {{- if ne $title .Title }}
+      {{- range first 4 (where .Site.RegularPages.ByLastmod.Reverse "Type" "in" site.Params.mainSections) }}
       <li>
         <a href="{{ .Permalink }}" class="nav-link">{{ .Title }}</a>
       </li>
       {{- end }}
-      {{- end }}
     </ul>
-    {{- $numberOfTagsLimit := $.Site.Params.numberOfTagsShown }}
-    {{ range $key, $value := .Site.Taxonomies }}
-    <div>
-      <h3 class="mt-4 taxonomy" id="{{ $key }}-section">{{ $key }}</h3>
-      <nav class="tags_nav sticky_note">
-        {{- $onPageTags := $.Page.Params.tags }}
-        {{- $slicedTags := ($value.ByCount | first $numberOfTagsLimit) }}
-        {{- range $slicedTags }}
-        <a href='{{ absURL $key }}/{{ (replace .Name "#" "%23") | urlize }}/' class=" post_tag button button_translucent">
-          {{ upper .Name }}
-          <span class='button_tally'>{{ .Count }}</span>
-        </a>
-        {{ end }}
-        {{ if gt (len $value.ByCount) $numberOfTagsLimit }}
-        <br>
-        <div class="post_tags_toggle button">All {{ $key }}</div>
-        {{- $tagsInfo := newScratch }}
-        <div class="post_tags">
-          <div class="tags_list">
-            {{- range $value.Alphabetical }}
-            {{ $tagsInfo.Add "tagsInfo" (slice .Name .Count)}}
-            <a href='{{ absURL $key }}/{{ (replace .Name "#" "%23") | urlize }}/' class=" post_tag button button_translucent" data-position={{ .Count }}>
-              {{- upper .Name -}}
-              <span class='button_tally'>{{ .Count }}</span>
-            </a>
-            {{ end }}
-            <use xlink:href="#closeme"></use>
-          </svg></span>
-          </div>
-        </div>
-        {{ end }}
-      </nav>
-    </div>
-    {{ end }}
+    <h3 class="mt-4 taxonomy" id="tags-section">tags</h3>
+    <nav class="tags_nav sticky_note">
+      {{- range .Site.Taxonomies.tags.ByCount }}
+      <a href='{{ absURL "tags" }}/{{ (replace .Name "#" "%23") | urlize }}/' class="post_tag button button_translucent">
+        {{- .Page.Title -}}
+        <span class='button_tally'>{{ .Count }}</span>
+      </a>
+      {{- end }}
+    </nav>
   </section>
 </aside>

@@ -1,11 +1,11 @@
 {{- $items := .Site.Data.social }}
-<div class='follow'>
+<div class="follow">
   {{- range $items }}
   {{- $url := .url }}
   {{- if .internal }}
   {{ $url = absURL .url }}
   {{- end }}
-  <a href='{{ $url }}'>
+  <a href="{{ $url }}">
     <svg class="icon">
       <use xlink:href="#{{ .item }}"></use>
     </svg>

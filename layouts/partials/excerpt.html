@@ -1,20 +1,11 @@
-<li class = 'post_item sticky_note'>
-  <div class = 'excerpt'>
-    <div class = 'excerpt_header'>
-      <h3 class = 'post_link'>
-        <a href='{{ .Permalink }}'>{{ .Title }}</a>
+<li class="post_item sticky_note">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
       </h3>
       {{ partial "post-meta.html" . }}
     </div>
-    {{- with .Params.thumbnail }}
-    <div class = 'excerpt_footer partition'>
-      <div class = 'excerpt_thumbnail'>
-      <img src = '{{ if (hasPrefix . "http") }}{{ . }}{{ else }}{{ absURL . }}{{ end }}'>
-      </div>
-      {{ else }}
-      <div class = 'excerpt_footer'>
-        {{- end }}
-      </div>
-    </div>
-  </li>
-  
+      <div class="excerpt_footer"></div>
+  </div>
+</li>
