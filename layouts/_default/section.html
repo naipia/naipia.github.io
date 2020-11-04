@@ -5,6 +5,7 @@
 <div class="grid-inverse wrap content">
   <article class="post_content">
     <h1 class="post_title">{{ .Title }}</h1>
+    <nav class="breadcrumb"><ol class="breadcrumb">{{ template "breadcrumbnav" (dict "p1" . "p2" .) }}</ol></nav>
     {{ partial "share" . }}
     {{- .Content }}
   </article>

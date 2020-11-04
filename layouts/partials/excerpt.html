@@ -1,11 +1,9 @@
 <li class="post_item sticky_note">
   <div class="excerpt">
     <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="{{ .Permalink }}">{{ .Title }}</a>
-      </h3>
+      <h3 class="post_link"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+      <nav><ol class="breadcrumb">{{ template "breadcrumbnav" (dict "p1" . "p2" .) }}</ol></nav>
       {{ partial "post-meta.html" . }}
     </div>
-      <div class="excerpt_footer"></div>
   </div>
 </li>
