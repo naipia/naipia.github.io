@@ -4,7 +4,7 @@ math: false
 categories:
   - 競技プログラミング
 tags:
-  - Go言語
+  - Go
   - library
   - data structure
 ---
@@ -217,5 +217,5 @@ func (s *lazySegmentTree) apply(k int, x F) {
 		s.lz[k] = s.h(s.lz[k], x)
 	}
 }
- 
+
 ```

@@ -4,7 +4,7 @@ math: false
 categories:
   - 競技プログラミング
 tags:
-  - Go言語
+  - Go
   - library
   - string
 ---
