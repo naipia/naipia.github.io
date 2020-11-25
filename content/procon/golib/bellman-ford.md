@@ -14,7 +14,7 @@ type edge struct{ v, to, co int }
 
 func bellmanFord(es []edge, n, s, inf int) []int {
 	dist := make([]int, n)
-	for i := 0; i < n-1; i++ {
+	for i := 0; i < n; i++ {
 		dist[i] = inf
 	}
 	dist[s] = 0
