@@ -1,5 +1,11 @@
 <footer class="footer">
 <span class="year" hidden></span>
+{{ .Site.Title }}
+<span class="info">
+  <ul>
+    <li><a href="/privacy-policy/">プライバシーポリシー</a></li>
+  </ul>
+</span>
   {{- if .Params.math }}
     {{ partial "math.html" . }}
   {{- end }}
