@@ -12,31 +12,26 @@ tags:
 ```go
 type edge struct{ v, to, co int }
 
-func bellmanFord(es []edge, n, s, inf int) []int {
+func bellmanFord(es []edge, n, s, inf int) ([]int, bool) {
 	dist := make([]int, n)
 	for i := 0; i < n; i++ {
 		dist[i] = inf
 	}
 	dist[s] = 0
-	chmin := func(a *int, b int) {
-		if *a > b {
-			*a = b
-		}
-	}
 	for i := 0; i < n-1; i++ {
 		for _, e := range es {
-			if dist[e.v] == inf {
-				continue
+			if dist[e.v] != inf && dist[e.to] > dist[e.v]+e.co {
+				dist[e.to] = dist[e.v] + e.co
 			}
-			chmin(&dist[e.to], dist[e.v]+e.co)
 		}
 	}
+	cycle := false
 	for _, e := range es {
-		if dist[e.v]+e.co < dist[e.to] {
-			return []int{}
+		if dist[e.v] != inf && dist[e.to] > dist[e.v]+e.co {
+			cycle = true
 		}
 	}
-	return dist
+	return dist, cycle
 }
 
 ```
