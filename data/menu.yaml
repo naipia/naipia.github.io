@@ -2,7 +2,7 @@
   link: /
 - name: Blog
   link: blog/
-- name: 競プロ
-  link: procon/
+- name: Procon Library Go
+  link: procon-lib-go/
 - name: About
   link: about/

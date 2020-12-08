@@ -1,5 +1,5 @@
 ---
-title: "Procon Go Library"
+title: "Procon Library Go"
 math: false
 ---
 
