@@ -1,5 +1,5 @@
 ---
-title: "Streak 365daysの記録"
+title: "Streak 365days時点の記録"
 date: "2020-12-17T22:57:58+09:00"
 math: false
 categories:
