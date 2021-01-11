@@ -11,6 +11,8 @@ tags:
 
 AtCoder Beginner Contest 188で青色になったので、到達時点の記録を残します（AtCoderID: [naipia](https://atcoder.jp/users/naipia)）。
 
+{{< tweet 1348268824236158986 >}}
+
 水色達成時の記録は[こちら](/blog/2020/03/rating-records/)
 
 ### 記録
