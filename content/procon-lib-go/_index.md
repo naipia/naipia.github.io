@@ -45,3 +45,4 @@ Go言語の競技プログラミングライブラリ
 - [中国余剰定理](./chinese-remainder-theorem/)
 - [Convolution](./convolution/)
 - [Floor Sum](./floor-sum/)
+- [行列演算](./matrix/)
