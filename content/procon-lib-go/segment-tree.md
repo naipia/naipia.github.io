@@ -9,19 +9,21 @@ tags:
   - data structure
 ---
 
-- `func newSegmentTree(n int, e func() S, f func(a, b S) S) *segmentTree`
-- `func (s *segmentTree) Set(i int, a S)`
-- `func (s *segmentTree) Build()`
-- `func (s *segmentTree) Get(i int) S`
-- `func (s *segmentTree) Update(i int, a S)`
-- `func (s *segmentTree) Query(l, r int) S`
-- `func (s *segmentTree) MaxRight(l int, f func(v S) bool) int`
-- `func (s *segmentTree) MinLeft(r int, f func(v S) bool) int`
-
 ```go
-type S struct{}
+type S struct{ v int }
 
-type segmentTree struct {
+func op(a, b S) S {
+	if a.v > b.v {
+		return a
+	}
+	return b
+}
+
+func e() S {
+	return S{0}
+}
+
+type segTree struct {
 	d  []S
 	n  int
 	sz int
@@ -29,33 +31,32 @@ type segmentTree struct {
 	f  func(a, b S) S
 }
 
-func newSegmentTree(n int, e func() S, f func(a, b S) S) *segmentTree {
+func newSegTree(n int, e func() S, op func(a, b S) S) *segTree {
 	sz := 1
 	for sz < n {
 		sz <<= 1
 	}
-	s := segmentTree{make([]S, 2*sz), n, sz, e, f}
+	s := segTree{make([]S, 2*sz), n, sz, e, op}
 	for i := 0; i < 2*sz; i++ {
 		s.d[i] = e()
 	}
 	return &s
 }
 
-func (s *segmentTree) Set(i int, a S) {
-	s.d[i+s.sz] = a
-}
-
-func (s *segmentTree) Build() {
+func (s *segTree) Build(arr []S) {
+	for i, v := range arr {
+		s.d[i+s.sz] = v
+	}
 	for i := s.sz - 1; i > 0; i-- {
 		s.d[i] = s.f(s.d[2*i], s.d[2*i+1])
 	}
 }
 
-func (s *segmentTree) Get(i int) S {
+func (s *segTree) Get(i int) S {
 	return s.d[i+s.sz]
 }
 
-func (s *segmentTree) Update(i int, a S) {
+func (s *segTree) Set(i int, a S) {
 	i += s.sz
 	s.d[i] = a
 	for i >>= 1; i > 0; i >>= 1 {
@@ -63,7 +64,7 @@ func (s *segmentTree) Update(i int, a S) {
 	}
 }
 
-func (s *segmentTree) Query(l, r int) S {
+func (s *segTree) Query(l, r int) S {
 	vl, vr := s.e(), s.e()
 	l += s.sz
 	r += s.sz
@@ -82,7 +83,7 @@ func (s *segmentTree) Query(l, r int) S {
 	return s.f(vl, vr)
 }
 
-func (s *segmentTree) MaxRight(l int, f func(v S) bool) int {
+func (s *segTree) MaxRight(l int, f func(v S) bool) int {
 	if l == s.n {
 		return s.n
 	}
@@ -90,8 +91,7 @@ func (s *segmentTree) MaxRight(l int, f func(v S) bool) int {
 	l += s.sz
 
 	for {
-		for l&1 == 0 {
-			l >>= 1
+		for ; l&1 == 0; l >>= 1 {
 		}
 		if !f(s.f(v, s.d[l])) {
 			for l < s.sz {
@@ -113,7 +113,7 @@ func (s *segmentTree) MaxRight(l int, f func(v S) bool) int {
 	return s.n
 }
 
-func (s *segmentTree) MinLeft(r int, f func(v S) bool) int {
+func (s *segTree) MinLeft(r int, f func(v S) bool) int {
 	if r == 0 {
 		return 0
 	}
@@ -121,9 +121,7 @@ func (s *segmentTree) MinLeft(r int, f func(v S) bool) int {
 	r += s.sz
 
 	for {
-		r--
-		for r > 1 && r&1 == 1 {
-			r >>= 1
+		for r--; r > 1 && r&1 == 1; r >>= 1 {
 		}
 		if !f(s.f(v, s.d[r])) {
 			for r < s.sz {
