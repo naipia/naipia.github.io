@@ -1,9 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ISUCON on naipia</title><link>https://naipia.github.io/tags/isucon/</link><description>Recent content in ISUCON on naipia</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Sat, 25 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://naipia.github.io/tags/isucon/index.xml" rel="self" type="application/rss+xml"/><item><title>ISUCON13 参加記 Create Speedy Logic（28位 56,881）</title><link>https://naipia.github.io/blog/2023/12/isucon13/</link><pubDate>Sat, 25 Nov 2023 00:00:00 +0000</pubDate><guid>https://naipia.github.io/blog/2023/12/isucon13/</guid><description>ISUCON13に「Create Speedy Logic」というチームで参加し、最終スコアは56,881点で28位でした。去年に続き２回目の参加になりますが今回も非常に楽しませていただきました。 もっとこうしていればとかはもちろんあるのですが、今回（ライブでの結果発表時では）30位だったので企業賞をもらえたりTOP30チーム入りという結果も残せたので嬉しく思います。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ISUCON on naipia</title><link>https://naipia.github.io/tags/isucon/</link><description>Recent content in ISUCON on naipia</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Sat, 25 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://naipia.github.io/tags/isucon/index.xml" rel="self" type="application/rss+xml"/><item><title>ISUCON13 参加記 Create Speedy Logic（28位 56,881）</title><link>https://naipia.github.io/blog/2023/12/isucon13/</link><pubDate>Sat, 25 Nov 2023 00:00:00 +0000</pubDate><guid>https://naipia.github.io/blog/2023/12/isucon13/</guid><description>ISUCON13に「Create Speedy Logic」というチームで参加し、最終スコアは56,881点で28位でした。去年に続き２回目の参加になりますが前回参加はブログを書いてなかったので終えられていなかったようです（ブログを書くまでがISUCONらしい）。今回こそは終えられるように書いてみました。
+もっとこうしていればとかはもちろんあるのですが、今回（ライブでの結果発表時点では30位だったので）丁度企業賞をもらえたりTOP30チーム入りという結果も残せたので嬉しく思います。
+28位　56,881　Create Speedy Logic
 ISUCON13 受賞チームおよび全チームスコア
 問題 https://github.com/isucon/isucon13
 ISUCON13 出題動画を公開しました🚀 こんいす〜！#isuconhttps://t.co/w6ImVK2gqq pic.twitter.com/HY3dx3SZYM
-&amp;mdash; ISUCON公式 (@isucon_official) November 25, 2023 スコアが投げ銭の合計！
-また単なるパフォーマンスチューニング以外にもDNS水責め攻撃の対応も必要そうとのこと
+&amp;mdash; ISUCON公式 (@isucon_official) November 25, 2023 スコアが投げ銭の合計なのが面白いですね。
+単なるパフォーマンスチューニング以外にもDNS水責め攻撃の対応も必要そうとのこと。
 事前の戦略 参加にあたって事前に決めた大まかな戦略は以下でした。
-初回ベンチマークくらいまでのやることの分担は決めて後は流れで 前半~中盤はやることが大きく被らない程度に一人１台使って動作確認・改善していく 16:00を過ぎたあたり各自の進捗をみつつサーバーの分割 ※こちらは間に合わず・・・ やったこと ※自分が関わった部分のみ抜き出したものなのでスコアとスコアの間に他の改善を含む場合があります
+初回ベンチマークくらいまでのやることの分担は決めて後は流れで 前半~中盤はやることが大きく被らない程度に一人１台使って動作確認・改善していく 16:00を過ぎたあたり各自の進捗をみつつサーバーの分割 ※こちらは最終的に間に合わず・・・ やったこと 自分は主にインデックス作成などのDB周りやコード上でN+1解消やDBテーブルキャッシュ作成したりをしていたと思います。 以下タイムラインです。
 時間 スコア やったことなど 9:00 &amp;mdash; 起床 10:00 &amp;mdash; マニュアル読む、コードやDB見る 10:20 3,769 alp設定して初回ベンチをする 11:35 12,264 インデックスを張る 13:30 12,264 ICONのキャッシュ 13:30 &amp;mdash; お昼ご飯を食べる 15:00 22,349 usersテーブル全体をキャッシュ 16:55 43,184 livestreams,livestream_tagテーブル全体キャッシュ、fillReactionResponse N+1解消 17:20 48,172 キャッシュしたテーブルを他の処理にも適用 17:?</description></item></channel></rss>
